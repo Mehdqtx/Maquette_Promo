@@ -1,0 +1,78 @@
+nav{
+	background-color: #4A89DC;
+}
+.navbar-nav li a{
+	color: #E6E9ED;
+}
+.navbar-brand{
+	padding: 10px;
+}
+.navbar-nav li a:hover{
+	color: #F5F7FA;
+	background-color: #5D9CEC;
+}
+.navbar-nav .active{
+	background-color: #5D9CEC;
+}
+.navbar-toggle {
+    border: 1px solid #F5F7FA;
+}
+.navbar-toggle .icon-bar {
+    background-color: #F5F7FA;
+}
+body{
+	background-color: #F5F7FA;
+}
+.page{
+	margin-left: 15%;
+	margin-right:15%;
+	width: 70%;
+}
+.btn-addReq{
+	background-color: #4A89DC; 
+    border-color: #4A89DC;
+}
+.btn-addReq:hover{
+	background-color: #5D9CEC; 
+    border-color: #5D9CEC;
+}
+.btn-signOut{
+	background-color: #DA4453; 
+    border-color: #DA4453;
+    margin-left:10px;
+    margin-right: 10px;
+}
+.btn-signOut:hover{
+	background-color: #ED5565; 
+    border-color: #ED5565;
+}
+.panel-connexion>.panel-heading {
+    color: #F5F7FA; 
+    background-color: #4A89DC; 
+    border-color: #4A89DC; 
+}
+.panel-connexion{
+	margin: auto;
+	max-width: 600px;
+}
+.btn-danger{
+	background-color: #DA4453; 
+    border-color: #DA4453;
+}
+.btn-danger:hover{
+	background-color: #ED5565; 
+    border-color: #ED5565;
+}
+.actionBouton{
+	margin-top: -7px;
+    margin-right: 10px;
+    float: right;
+}
+.actionBouton .btn{
+	background-color: #4A89DC;
+    border-color: #4A89DC;
+}
+.actionBouton .btn:hover{
+	background-color: #5D9CEC;
+    border-color: #5D9CEC;
+}
