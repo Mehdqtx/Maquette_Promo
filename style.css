@@ -76,3 +76,8 @@ body{
 	background-color: #5D9CEC;
     border-color: #5D9CEC;
 }
+.panel-primary > .panel-heading {
+	color: #F5F7FA; 
+    background-color: #4A89DC; 
+    border-color: #4A89DC; 
+}
