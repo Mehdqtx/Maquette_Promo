@@ -1,25 +1,25 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Maquette</title>
+  <head>
+    <meta charset="utf-8">
+    <title>Maquette</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootflat.github.io/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="bootflat.github.io/css/site.min.css" />
-  <link rel="stylesheet" href="style.css" />
-  <!--[if lt IE 9]>
-      <script src="bootflat.github.io/js/html5shiv.js"></script>
-      <script src="bootflat.github.io/js/respond.min.js"></script>
-    <![endif]-->
-   <script type="text/javascript" src="bootflat.github.io/js/site.min.js"></script>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootflat.github.io/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootflat.github.io/css/site.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!--[if lt IE 9]>
+        <script src="bootflat.github.io/js/html5shiv.js"></script>
+        <script src="bootflat.github.io/js/respond.min.js"></script>
+      <![endif]-->
+    <script type="text/javascript" src="bootflat.github.io/js/site.min.js"></script>
+  </head>
+  <body>
+
     <nav class="navbar" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
-        
-        <div class="navbar-header">
+        <div class="navbar-header">       
           <img class="navbar-brand" src="Logo-policenationale.png"></img>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
@@ -28,7 +28,7 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
+          <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Accueil <span class="badge badge-danger">2</span></a></li>
@@ -41,57 +41,81 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
+
     <div class="container">
-    	<div class="alert alert-success alert-dismissable">
-          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-          <strong>Attention !</strong> Une réquisition a été acceptée.
-        </div>
-    	<div class="alert alert-danger">
-          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-          <strong>Attention !</strong> Une réquisition a été rejetée.
-        </div>
-        <h2>Réquisitions</h2>
-        <div class="col-md-3 example">
-            <button type="button" class="btn btn-addReq btn-block">Créer une Réquisition</button>
-        </div>
-        <div class="col-md-3 example">
-        	<div class="btn-group">
-              <button type="button" class="btn btn-danger">Filtres</button>
-              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
-                <span class="caret"></span>
-                <span class="sr-only">Toggle Dropdown</span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Validées</a></li>
-                <li><a href="#">En attente</a></li>
-                <li><a href="#">Rejetées</a></li>
+      <div class="col-md-4" style="float:auto" >
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Notifications</h3>
+          </div>
+          <div class="panel-body">
+            <div class="col-md-12">
+              <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <strong>Attention !</strong> Une réquisition a été acceptée.
+              </div>
+              <div class="alert alert-danger">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <strong>Attention !</strong> Une réquisition a été rejetée.
+              </div>
             </div>
+          </div>
         </div>
-        <div class="col-md-12 example">
-		    <div class="list-group">
-		      <a href="#" class="list-group-item">
-		        <h4 class="list-group-item-heading">Req1</h4>
-		        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-		        <span class="label label-success">Validée</span>
-		      </a>
-		      <a href="#" class="list-group-item">
-		        <h4 class="list-group-item-heading">Req2</h4>
-		        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-		        <span class="label label-warning">En attente</span>
-		      </a>
-		      <a href="#" class="list-group-item">
-		        <h4 class="list-group-item-heading">Req3</h4>
-		        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-		        <span class="label label-danger">Rejetée</span>
-		      </a>
-		  </div>
-	      
+      </div>
+
+      <div class="col-md-8" style="float:left">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Réquisitions</h3>
+          </div>
+          <div class="panel-body">
+            <div class="col-md-12">
+              <div class="col-md-6 example">
+                <button type="button" class="btn btn-addReq btn-block">Créer une Réquisition</button>
+              </div>
+              <div class="col-md-6 example">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-danger">Filtres</button>
+                  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Validées</a></li>
+                    <li><a href="#">En attente</a></li>
+                    <li><a href="#">Rejetées</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-12 example">
+                <div class="list-group">
+                  <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">Req1</h4>
+                    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                    <span class="label label-success">Validée</span>
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">Req2</h4>
+                    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                    <span class="label label-warning">En attente</span>
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">Req3</h4>
+                    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                    <span class="label label-danger">Rejetée</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 	    </div>
-	</div>
-	<script src="bootflat.github.io/js/jquery-1.10.1.min.js"></script>
+    </div>
+
+	  <script src="bootflat.github.io/js/jquery-1.10.1.min.js"></script>
   	<script src="bootflat.github.io/js/site.min.js"></script>
-	<script src="bootflat.github.io/js/bootstrap.min.js"></script>
-	<script src="bootflat.github.io/js/respond.min.js"></script>
-	<script src="bootflat.github.io/js/application.js"></script>
-</body>
+  	<script src="bootflat.github.io/js/bootstrap.min.js"></script>
+  	<script src="bootflat.github.io/js/respond.min.js"></script>
+  	<script src="bootflat.github.io/js/application.js"></script>
+  </body>
 </html>
