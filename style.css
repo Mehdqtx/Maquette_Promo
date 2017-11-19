@@ -81,3 +81,7 @@ body{
     background-color: #4A89DC; 
     border-color: #4A89DC; 
 }
+.checkbox label, .radio label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
