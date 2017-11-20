@@ -85,3 +85,12 @@ body{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+.footer {
+    height: 5%;
+    padding: 40px 0;
+    background-color: #4A89DC;
+}
+.footer-nav .nav-item>a,.footer-copyright {
+    color: #434a54;
+
+}
