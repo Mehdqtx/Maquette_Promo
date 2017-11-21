@@ -34,3 +34,24 @@
 .margin-top{
   margin-top: 70px;
 }
+
+.btn-secondary {
+    color: #292b2c;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-link {
+    font-weight: 400;
+    color: #292b2c;
+    border-radius: 0;
+}
+
+.footer {
+    padding: 2.5rem 0;
+    color: #999;
+    position: relative;
+    margin-top: 20%;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
+}
