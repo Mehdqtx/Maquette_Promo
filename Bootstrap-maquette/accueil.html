@@ -15,10 +15,10 @@
       <![endif]-->
 
     <!-- BOOTSTRAP-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css">
-    
+
   </head>
   <body>
     <div class="container">
@@ -28,7 +28,7 @@
 	      <a href=""><img am-TopLogo alt="SECUREVIEW"  src="http://librasys.com/wp-content/uploads/2016/01/libra_logo_grey.jpg" class="img-responsive"></a>
 	    </div>
 	    <div class="col-xs-5 col-xs-offset-1 col-sm-5 col-sm-offset-0 text-right ">
-	      <p><button type="button" class="btn btn-outline-dark co">Déconnexion</button></p>
+        <a href="connexion.html"><p><button type="button" class="btn btn-outline-dark co">Déconnexion</button><p/></a>
 	    </div>
 	  </div> <!-- End Topper -->
 	  <!-- Navigation -->
@@ -49,7 +49,7 @@
 			  </li>
 			</ul>
 		</div>
-	    
+
 	  </div>
 	</div>
 
@@ -76,9 +76,9 @@
 						Réquisitions
 					</div>
 					<div class="card-body">
-						<button type="button" class="btn btn-outline-primary">Créer une demande de réquisition</button>
+						<a href="ajout-requisition.html"><button type="button" class="btn btn-outline-primary">Créer une demande de réquisition</button></a>
 						<div class="list-group">
-						  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+						  <a href="consulter-requisition.html" class="list-group-item list-group-item-action flex-column align-items-start">
 						    <div class="d-flex w-100 justify-content-between">
 						      <h5 class="mb-1">Réquisition AHDGYH</h5>
 						      <small class="text-muted">20/07/2018 17:12</small>
@@ -86,7 +86,7 @@
 						    <p class="mb-1">Infos de la réquisition.</p>
 						    <small><span class="badge badge-success">Validée</span></small>
 						  </a>
-						  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+						  <a href="consulter-requisition.html" class="list-group-item list-group-item-action flex-column align-items-start">
 						    <div class="d-flex w-100 justify-content-between">
 						      <h5 class="mb-1">Réquisition NDJIN</h5>
 						      <small class="text-muted">20/07/2018 15:23</small>
@@ -94,7 +94,7 @@
 						    <p class="mb-1">Infos de la réquisition.</p>
 						    <small class="text-muted"><span class="badge badge-secondary">En attente</span></small>
 						  </a>
-						  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+						  <a href="consulter-requisition.html" class="list-group-item list-group-item-action flex-column align-items-start">
 						    <div class="d-flex w-100 justify-content-between">
 						      <h5 class="mb-1">Réquisition HICJBIE</h5>
 						      <small class="text-muted">19/07/2018 08:57</small>
@@ -159,26 +159,27 @@
 							      <input type="date" class="form-control" id="validationCustom02">
 							    </div>
 							</div>
-							
-						   <input type="text" class="form-control" placeholder="id demandeurs">
-						   
+
+              <!-- Pas besoin pour la première démo car que OPJ. -->
+						   <!-- <input type="text" class="form-control" placeholder="id demandeurs">
+
 						   <input type="text" class="form-control" placeholder="Nom demandeurs">
 
 						   <input type="text" class="form-control" placeholder="Prenom demandeurs">
 
-						   <select class="custom-select col-12">
+						   <select class="custom-select col-12 hide">
 							  <option selected>Etablissement</option>
 							  <option value="1">One</option>
 							  <option value="2">Two</option>
 							  <option value="3">Three</option>
 							</select>
 
-							<select class="custom-select col-12">
+							<select class="custom-select col-12 hide">
 							  <option selected>Service</option>
 							  <option value="1">One</option>
 							  <option value="2">Two</option>
 							  <option value="3">Three</option>
-							</select>
+							</select> -->
 
 						</form>
 					</div>
