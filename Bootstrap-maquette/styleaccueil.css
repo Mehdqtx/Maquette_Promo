@@ -1,0 +1,24 @@
+#accueil{
+	margin-top:35px;
+}
+.card-header{
+	background-color: #0062cc;
+	color: #f8f9fa;
+}
+.btn{
+	cursor: pointer;
+}
+.list-group{
+	margin-top: 20px;
+}
+.list-group-item-action:focus, .list-group-item-action:hover {
+    color: #282929;
+    background-color: #0341804a;
+}
+label{
+	cursor: pointer;
+}
+input[type=text], select{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

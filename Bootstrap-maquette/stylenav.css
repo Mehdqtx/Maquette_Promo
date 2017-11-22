@@ -35,6 +35,8 @@
 	border-bottom: solid blue 2px;
 	background-color:white;
 }/**** FIN DE NAVBAR *****/
-
+.nav-link.active{
+  border-bottom: solid blue 2px;
+}
 
 

@@ -1,0 +1,202 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Accueil</title>
+    <!--  BOOTFLAT-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootflat.github.io/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootflat.github.io/css/site.min.css" />
+    <link href="style.css" rel="stylesheet" type="text/css">-->
+    <!--[if lt IE 9]>
+        <script src="bootflat.github.io/js/html5shiv.js"></script>
+        <script src="bootflat.github.io/js/respond.min.js"></script>
+      <![endif]-->
+
+    <!-- BOOTSTRAP-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="stylenav.css" rel="stylesheet" type="text/css">
+    <link href="styleaccueil.css" rel="stylesheet" type="text/css">
+    
+  </head>
+  <body>
+    <div class="container">
+	  <!-- Topper w/ logo -->
+	  <div class="row hidden-xs topper">
+	    <div class="col-xs-7 col-sm-7">
+	      <a href=""><img am-TopLogo alt="SECUREVIEW"  src="http://librasys.com/wp-content/uploads/2016/01/libra_logo_grey.jpg" class="img-responsive"></a>
+	    </div>
+	    <div class="col-xs-5 col-xs-offset-1 col-sm-5 col-sm-offset-0 text-right ">
+	      <p><button type="button" class="btn btn-outline-dark co">Deconnexion</button></p>
+	    </div>
+	  </div> <!-- End Topper -->
+	  <!-- Navigation -->
+	  <div class="row">
+	  	<div class="container ligne">
+		  	<ul class="nav justify-content-center">
+			  <li class="nav-item">
+			    <a class="nav-link active" href="#">Accueil</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">Statistiques</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">Droits</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="mon-compte.html">Mon compte</a>
+			  </li>
+			</ul>
+		</div>
+	    
+	  </div>
+	</div>
+
+
+	<div id="accueil" class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="alert alert-success alert-dismissible fade show" role="alert">
+				  <strong>Réquisition AHDGYH</strong> La réquisition a été validée.
+				  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="alert alert-danger alert-dismissible fade show" role="alert">
+				  <strong>Réquisition HICJBIE</strong> La réquisition a été rejetée.
+				  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+			</div>
+			<div class="col-8">
+				<div class="card">
+					<div class="card-header">
+						Réquissitions
+					</div>
+					<div class="card-body">
+						<button type="button" class="btn btn-outline-primary">Créer une demande de réquisition</button>
+						<div class="list-group">
+						  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+						    <div class="d-flex w-100 justify-content-between">
+						      <h5 class="mb-1">Réquisition AHDGYH</h5>
+						      <small class="text-muted">20/07/2018 17:12</small>
+						    </div>
+						    <p class="mb-1">Infos de la réquisition.</p>
+						    <small><span class="badge badge-success">Validée</span></small>
+						  </a>
+						  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+						    <div class="d-flex w-100 justify-content-between">
+						      <h5 class="mb-1">Réquisition NDJIN</h5>
+						      <small class="text-muted">20/07/2018 15:23</small>
+						    </div>
+						    <p class="mb-1">Infos de la réquisition.</p>
+						    <small class="text-muted"><span class="badge badge-secondary">En attente</span></small>
+						  </a>
+						  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+						    <div class="d-flex w-100 justify-content-between">
+						      <h5 class="mb-1">Réquisition HICJBIE</h5>
+						      <small class="text-muted">19/07/2018 08:57</small>
+						    </div>
+						    <p class="mb-1">Infos de la réquisition.</p>
+						    <small class="text-muted"><span class="badge badge-danger">Rejetée</span></small>
+						  </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="card">
+					<div class="card-header">
+						Filtres
+					</div>
+					<div class="card-body">
+						<form>
+							<label class="custom-control custom-checkbox">
+							  <input type="checkbox" class="custom-control-input">
+							  <span class="custom-control-indicator"></span>
+							  <span class="custom-control-description">Réquisitions valiées</span>
+							</label>
+
+							<label class="custom-control custom-checkbox">
+							  <input type="checkbox" class="custom-control-input">
+							  <span class="custom-control-indicator"></span>
+							  <span class="custom-control-description">Réquisitions en attentes</span>
+							</label>
+
+							<label class="custom-control custom-checkbox">
+							  <input type="checkbox" class="custom-control-input">
+							  <span class="custom-control-indicator"></span>
+							  <span class="custom-control-description">Réquisitions rejetées</span>
+							</label>
+
+							<label class="custom-control custom-checkbox">
+							  <input type="checkbox" class="custom-control-input">
+							  <span class="custom-control-indicator"></span>
+							  <span class="custom-control-description">Réquisitions terminées</span>
+							</label>
+
+							<label class="custom-control custom-checkbox">
+							  <input type="checkbox" class="custom-control-input">
+							  <span class="custom-control-indicator"></span>
+							  <span class="custom-control-description">Réquisitions en cours</span>
+							</label>
+
+							<label class="custom-control custom-checkbox">
+							  <input type="checkbox" class="custom-control-input">
+							  <span class="custom-control-indicator"></span>
+							  <span class="custom-control-description">Réquisitions futures</span>
+							</label>
+
+							<div class="row">
+								<div class="col-12">
+							      <label for="validationCustom01">Date debut</label>
+							      <input type="date" class="form-control" id="validationCustom01">
+							    </div>
+							    <div class="col-12">
+							      <label for="validationCustom02">Date fin</label>
+							      <input type="date" class="form-control" id="validationCustom02">
+							    </div>
+							</div>
+							
+						   <input type="text" class="form-control" placeholder="id demandeurs">
+						   
+						   <input type="text" class="form-control" placeholder="Nom demandeurs">
+
+						   <input type="text" class="form-control" placeholder="Prenom demandeurs">
+
+						   <select class="custom-select col-12">
+							  <option selected>Etablissement</option>
+							  <option value="1">One</option>
+							  <option value="2">Two</option>
+							  <option value="3">Three</option>
+							</select>
+
+							<select class="custom-select col-12">
+							  <option selected>Service</option>
+							  <option value="1">One</option>
+							  <option value="2">Two</option>
+							  <option value="3">Three</option>
+							</select>
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- SCRIPT BOOTFLAT-->
+	<!--<script type="text/javascript" src="bootflat.github.io/js/site.min.js"></script>
+	<script type="text/javascript" src="bootflat.github.io/bootflat/js/icheck.min.js"></script>
+    <script type="text/javascript" src="bootflat.github.io/bootflat/js/jquery.fs.selecter.min.js"></script>-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
