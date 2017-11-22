@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Ajout Requisition</title>
+    <title>Ajout zone</title>
     <!--  BOOTFLAT-->
     <!--<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootflat.github.io/css/bootstrap.min.css" />
@@ -17,6 +17,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css">
+
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+   crossorigin=""></script>  
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+   crossorigin=""/>
     
   </head>
   <body>
@@ -58,49 +65,12 @@
 			<div class="col-12">
 				<div class="card">
 					<div class="card-header">
-						Nouvelle réquisition
+						Zone réquisition
 					</div>
 					<div class="card-body">
-						<form>
-							<div class="form-group">
-							    <label for="exampleFormControlInput1">Titre</label>
-							    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Titre">
-							</div>
-						  <div class="form-group">
-						    <label for="exampleFormControlInput1">De</label>
-						    <input type="date" class="form-control" id="exampleFormControlInput1">
-						  </div>
-						  <div class="form-group">
-						    <label for="exampleFormControlInput1">à</label>
-						    <input type="date" class="form-control" id="exampleFormControlInput1">
-						  </div>
-						  <div class="form-group">
-						    <label for="exampleFormControlTextarea1">Justification de la demande</label>
-						    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-						  </div>
-						  <div class="row">
-							  <div class="col-5 form-group">
-							  	<label for="exampleFormControlSelect2">Choisir article(s)</label>
-							    <div class="input-group">
-							      <input type="text" class="form-control" placeholder="Chercher" aria-label="Chercher">
-							      <span class="input-group-btn">
-							        <button class="btn btn-secondary btn-sm" type="button">Ajouter</button>
-							      </span>
-							    </div>
-							  </div>
-							  <div class="col-7 form-group">
-							    <label for="exampleFormControlSelect2">Articles choisis</label>
-							    <select multiple class="form-control" id="exampleFormControlSelect2">
-							      <option>Article 1</option>
-							      <option>Article 2</option>
-							      <option>Article 3</option>
-							      <option>Article 4</option>
-							      <option>Article 5</option>
-							    </select>
-							  </div>
-							</div>
-						</form>
-						<a href="ajout-carto.html"><button type="button" class="btn btn-outline-primary float-right">Délimiter la zone</button></a>
+						<div id="mymap">
+						</div>
+						<button type="button" class="btn btn-outline-primary float-right">Valider</button>
 					</div>
 				</div>
 			</div>
@@ -117,5 +87,20 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <script>
+
+	  // initialize the map
+	  var map = L.map('mymap').setView([43.6321606, 3.8623347], 13);
+
+	  // load a tile layer
+	  L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+	    {
+	      attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+	      maxZoom: 17,
+	      minZoom: 9
+	    }).addTo(map);
+
+	  </script>
   </body>
 </html>
