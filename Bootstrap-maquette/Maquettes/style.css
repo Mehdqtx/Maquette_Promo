@@ -55,6 +55,9 @@ body{
 .btn{
   cursor: pointer;
 }
+.list-group{
+  margin-top: 20px;
+}
 .list-group-item-action:focus, .list-group-item-action:hover {
     color: #282929;
     background-color: #0341804a;
@@ -155,17 +158,4 @@ input[type=text], select{
 }
 .close{
   cursor: pointer;
-}
-
-.input-group-btn:not(:first-child)>.btn-group:first-child, .input-group-btn:not(:first-child)>.btn:first-child {
-    margin-left: -1px;
-    padding-top: -20px;
-    margin-top: 10px;
-}
-
-
-/**** GESTION SERVICE ****/
-
-.opj-line-middle{
-  line-height: 2.5em;
 }
