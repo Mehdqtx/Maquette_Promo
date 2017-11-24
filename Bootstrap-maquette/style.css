@@ -55,9 +55,6 @@ body{
 .btn{
   cursor: pointer;
 }
-.list-group{
-  margin-top: 20px;
-}
 .list-group-item-action:focus, .list-group-item-action:hover {
     color: #282929;
     background-color: #0341804a;
@@ -158,4 +155,12 @@ input[type=text], select{
 }
 .close{
   cursor: pointer;
+}
+
+
+
+/**** GESTION SERVICE ****/
+
+.opj-line-middle{
+  line-height: 2.5em;
 }
