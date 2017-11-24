@@ -3,12 +3,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Maquette</title>
+    <title>Réquisition n°3431</title>
 
     <!-- BOOTSTRAP-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+   crossorigin=""></script>
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+   crossorigin=""/>
 
   </head>
   <body>
@@ -28,13 +34,13 @@
 	  	<div class="container ligne">
 		  	<ul class="nav justify-content-center">
 			  <li class="nav-item">
-			    <a class="nav-link" href="accueil.html">Accueil</a>
+			    <a class="nav-link active" href="accueil.html">Accueil</a>
 			  </li>
 			  <li class="nav-item">
 			    <a class="nav-link" href="#">Statistiques</a>
 			  </li>
 			  <li class="nav-item">
-			    <a class="nav-link" href="#">Droits</a>
+			    <a class="nav-link" href="gestion-droit.html">Droits</a>
 			  </li>
 			  <li class="nav-item">
 			    <a class="nav-link" href="mon-compte.html">Mon compte</a>
@@ -49,66 +55,98 @@
 		<div class="row">
 			<nav aria-label="breadcrumb" role="navigation">
 			  <ol class="breadcrumb top">
-			    <li class="breadcrumb-item"><a href="#">Liste des réquisitions</a></li>
-			    <li class="breadcrumb-item active" aria-current="page">Réquisition n°</li>
+			    <li class="breadcrumb-item"><a href="accueil.html">Liste des réquisitions</a></li>
+			    <li class="breadcrumb-item active" aria-current="page">Réquisition n°3431</li>
 			  </ol>
 			</nav>
 		</div>
 	</div>
-	<div class="container">
-		<div class="row justify-content-around">
-			<div class="col-6">
-				<div class="title">
-					<h6> Informations Générales </h6>
-				</div>
-				<div class="bloc ">
-					<div class="row">
-						<p>Nom de la réquisition : </p>
+	<div id="accueil" class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="card">
+					<div class="card-header">
+						Réquisition n°3431
 					</div>
-					<div class="row">
-						<p>Nom du service : </p>
-					</div>
-					<div class="row">
-						<p>Articles : </p>
-					</div>
-					<div class="row">
-						<p>Infractions : </p>
-					</div>
-				</div>
-			</div>
-			<div class="col-6">
-				<div class="title">
-					<h6> Description </h6>
-				</div>
-				<div class="bloc ">
-					<div class="row">
-						<p> Description de la réquisition ici ... </p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-		<br>
-	<div class="container">
-		<div class="title">
-			<h6> Informations temporelles et géographiques </h6>
-		</div>
-		<div class="bloc ">
-			<div class="row">
-				<p> Cette opération se déroulera le JOUR MOIS ANNEE de XXhXX à XXhXX  </p>
-			</div>
-			<div class="row">
-				<p> Sur le secteur :</p>
-			</div>
-			<div class="row justify-content-center">
-					<img src="https://i.pinimg.com/236x/cc/5c/2f/cc5c2fbd410d3e958ed3cea40462a76e--avignon-montpellier.jpg"  class="img-fluid" alt="Responsive image">
-			</div>
-			<div class="row">
-				<p> Compris entre les rues suivantes :  </p>
-			</div>
-		</div>
-	</div>
+					<div class="card-body">
+						
+		              	<div class="form-group row">
+		  					<div class="col-6">
+		  						<label for="exampleFormControlInput1">Date debut</label>
+		  							<p> 30 Novembre 2017 </p>
+		  					</div>
+		                	<div class="col-6">
+		  						<label for="exampleFormControlInput1">Heure debut</label>
+		  						<p>09h00</p>
+		  					</div>
+		              	</div>
 
+		              	<div class="form-group row">
+		  					<div class="col-6">
+		  						<label for="exampleFormControlInput1">Date fin</label>
+		  							<p> 30 Novembre 2017 </p>
+		  					</div>
+
+		                	<div class="col-6">
+		  						<label for="exampleFormControlInput1">Heure fin</label>
+		  						    <p>15h00</p>
+		  					</div>
+		              	</div>
+
+
+		                <div class="row">
+							<div class="col-6 form-group">
+								<label for="exampleFormControlSelect2">Fondements juridiques choisis</label>
+									<select multiple class="form-control" id="exampleFormControlSelect2">
+									    <option>Fondement 1</option>
+									    <option>Fondement 2</option>
+									    <option>Fondement 3</option>
+									    <option>Fondement 4</option>
+									    <option>Fondement 5</option>
+									</select>
+							</div>
+							<div class="col-6 form-group">
+								<label for="exampleFormControlSelect2">Infractions choisis</label>
+									<select multiple class="form-control" id="exampleFormControlSelect2">
+									    <option>Infraction 1</option>
+									    <option>Infraction 2</option>
+									    <option>Infraction 3</option>
+									    <option>Infraction 4</option>
+									    <option>Infraction 5</option>
+									</select>
+							</div>
+						</div>
+						
+							<div class="form-group">
+								<label for="exampleFormControlTextarea1">Motivation de la demande</label>
+								<p> Les contrôles pourront concerner les personnes se trouvant dans les conditions de temps et de lieux fixés par les présentes réquisitions, ainsi que les véhicules qui, dans les mêmes circonstances de temps et de lieux, circulent, sont arrétés ou stationnent sur la voie publique ou dans les lieux accessibles au public...</p> 
+							</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+								
+	<div id="accueil" class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="card">
+					<div class="card-header">
+						Zone réquisition
+					</div>
+					<div class="card-body">
+						<div id="mymap">
+				              <!-- Insérer map -->
+						</div>
+				       
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+						
+	
 
 
 
@@ -118,5 +156,19 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script>
+
+	  // initialize the map
+	  var map = L.map('mymap').setView([43.6321606, 3.8623347], 13);
+
+	  // load a tile layer
+	  L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+	    {
+	      attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+	      maxZoom: 17,
+	      minZoom: 9
+	    }).addTo(map);
+
+	  </script>
   </body>
 </html>

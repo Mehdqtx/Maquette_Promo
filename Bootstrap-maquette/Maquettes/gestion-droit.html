@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Accueil</title>
+    <title>Gestion des services</title>
     <!--  BOOTFLAT-->
     <!--<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootflat.github.io/css/bootstrap.min.css" />
@@ -36,13 +36,13 @@
 	  	<div class="container ligne">
 		  	<ul class="nav justify-content-center">
 			  <li class="nav-item">
-			    <a class="nav-link active" href="#">Accueil</a>
+			    <a class="nav-link " href="accueil.html">Accueil</a>
 			  </li>
 			  <li class="nav-item">
 			    <a class="nav-link" href="#">Statistiques</a>
 			  </li>
 			  <li class="nav-item">
-			    <a class="nav-link" href="gestion-droit.html">Droits</a>
+			    <a class="nav-link active" href="gestion-droit.html">Droits</a>
 			  </li>
 			  <li class="nav-item">
 			    <a class="nav-link" href="mon-compte.html">Mon compte</a>
@@ -56,56 +56,128 @@
 
 	<div id="accueil" class="container">
 		<div class="row">
-			<div class="col-12">
-				<div class="alert alert-success alert-dismissible fade show" role="alert">
-				  <strong>Réquisition AHDGYH</strong> La réquisition a été validée.
-				  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				    <span aria-hidden="true">&times;</span>
-				  </button>
-				</div>
-				<div class="alert alert-danger alert-dismissible fade show" role="alert">
-				  <strong>Réquisition HICJBIE</strong> La réquisition a été rejetée.
-				  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				    <span aria-hidden="true">&times;</span>
-				  </button>
-				</div>
-			</div>
 			<div class="col-8">
 				<div class="card">
 					<div class="card-header">
-						Réquisitions
+						Gestion des services
 					</div>
-					<div class="card-body">
-						<a href="ajout-requisition.html"><button type="button" class="btn btn-outline-primary">Créer une demande de réquisition</button></a>
-						<div class="list-group">
-						  <a href="consulter-requisition.html" class="list-group-item list-group-item-action flex-column align-items-start">
-						    <div class="d-flex w-100 justify-content-between">
-						      <h5 class="mb-1">Réquisition AHDGYH</h5>
-						      <small class="text-muted">20/07/2018 17:12</small>
+					
+						<div id="accordion" role="tablist">
+						  <div class="card">
+						    <div class="card-header" role="tab" id="headingOne">
+						      <h5 class="mb-0">
+						        <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						          Service 1
+						        </a>
+						      </h5>
 						    </div>
-						    <p class="mb-1">Infos de la réquisition.</p>
-						    <small><span class="badge badge-success">Validée</span></small>
-						  </a>
-						  <a href="consulter-requisition.html" class="list-group-item list-group-item-action flex-column align-items-start">
-						    <div class="d-flex w-100 justify-content-between">
-						      <h5 class="mb-1">Réquisition NDJIN</h5>
-						      <small class="text-muted">20/07/2018 15:23</small>
+
+						    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+						      
+					       		<ul class="list-group">
+									<li class="list-group-item">
+										<div class="opj-line-middle">
+											OPJ1
+											<div class="dropdown float-right">
+												<div class="btn-group dropdown">
+												  <button type="button" class="btn btn-secondary ">
+												    Action
+												  </button>
+												  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												    <span class="sr-only">Toggle Dropdown</span>
+												  </button>
+												  <div class="dropdown-menu">
+												   
+													<a class="dropdown-item" href="#">Supprimer</a>
+													<a class="dropdown-item" href="#">Changer service</a>
+													<a class="dropdown-item" href="#">Promouvoir</a>
+												
+												  </div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="list-group-item">
+										<div class="opj-line-middle">
+											OPJ2
+											<div class="dropdown float-right">
+												<div class="btn-group dropdown">
+												  <button type="button" class="btn btn-secondary ">
+												    Action
+												  </button>
+												  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												    <span class="sr-only">Toggle Dropdown</span>
+												  </button>
+												  <div class="dropdown-menu">
+												   
+													<a class="dropdown-item" href="#">Supprimer</a>
+													<a class="dropdown-item" href="#">Changer service</a>
+													<a class="dropdown-item" href="#">Promouvoir</a>
+												
+												  </div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="list-group-item">
+										<div class="opj-line-middle">
+											OPJ3
+											<div class="dropdown float-right">
+												<div class="btn-group dropdown">
+												  <button type="button" class="btn btn-secondary ">
+												    Action
+												  </button>
+												  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												    <span class="sr-only">Toggle Dropdown</span>
+												  </button>
+												  <div class="dropdown-menu">
+												   
+													<a class="dropdown-item" href="#">Supprimer</a>
+													<a class="dropdown-item" href="#">Changer service</a>
+													<a class="dropdown-item" href="#">Promouvoir</a>
+												
+												  </div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>								
+						      
 						    </div>
-						    <p class="mb-1">Infos de la réquisition.</p>
-						    <small class="text-muted"><span class="badge badge-secondary">En attente</span></small>
-						  </a>
-						  <a href="consulter-requisition.html" class="list-group-item list-group-item-action flex-column align-items-start">
-						    <div class="d-flex w-100 justify-content-between">
-						      <h5 class="mb-1">Réquisition HICJBIE</h5>
-						      <small class="text-muted">19/07/2018 08:57</small>
+						  </div>
+						  <div class="card">
+						    <div class="card-header" role="tab" id="headingTwo">
+						      <h5 class="mb-0">
+						        <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						          Service 2
+						        </a>
+						      </h5>
 						    </div>
-						    <p class="mb-1">Infos de la réquisition.</p>
-						    <small class="text-muted"><span class="badge badge-danger">Rejetée</span></small>
-						  </a>
+						    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+						      <div class="card-body">
+						        Texte 2
+						      </div>
+						    </div>
+						  </div>
+						  <div class="card">
+						    <div class="card-header" role="tab" id="headingThree">
+						      <h5 class="mb-0">
+						        <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						          Service 3
+						        </a>
+						      </h5>
+						    </div>
+						    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+						      <div class="card-body">
+						    	text 3
+						      </div>
+						    </div>
+						  </div>
 						</div>
-					</div>
+					
 				</div>
 			</div>
+
 			<div class="col-4">
 				<div class="card">
 					<div class="card-header">
