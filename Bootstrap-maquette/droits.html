@@ -46,13 +46,17 @@
 		<div class="row">
 			<div class="col-12">
 				<select class="form-control">
-				  <option>Default select</option>
+				  <option>OPJ</option>
+				  <option>Responsable application</option>
+				  <option>Procureur/Greffier</option>
+				  <option>SA</option>
+
 				</select>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-12">
-					<div class="card">
+					<div class="card" id="listeDroits">
 						<div class="card-header">
 							Gestion des droits
 						</div>
@@ -60,20 +64,154 @@
 							<div class="form-check">
 							  <label class="form-check-label">
 							    <input class="form-check-input" type="checkbox" value="">
-							    Option one is this and that&mdash;be sure to include why it's great
+							    Lister toutes les réquisitions
 							  </label>
 							</div>
-							<div class="form-check disabled">
+							<div class="form-check ">
 							  <label class="form-check-label">
-							    <input class="form-check-input" type="checkbox" value="" disabled>
-							    Option two is disabled
+							    <input class="form-check-input" type="checkbox" value="" >
+							    Lister les réquisitions de son établissement
+							  </label>
+							</div>
+							<div class="form-check">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value="">
+							    Lister les réquisitions de son service
+							  </label>
+							</div>
+							<div class="form-check ">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value="" >
+							    Lister les propositions en attente de réponses
+							  </label>
+							</div>
+							<div class="form-check">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value="">
+							    Refuser une proposition de réquisition en ajoutant un motif
+							    
+							  </label>
+							</div>
+							<div class="form-check ">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value="" >
+							    Accepter une demande de réquisition
+							  </label>
+							</div>
+							<div class="form-check">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value="">
+							    Créer une réquisition
+							    
+							  </label>
+							</div>
+							<div class="form-check ">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value="" >
+							    Accéder aux statistiques
+							  </label>
+							</div>
+							<div class="form-check">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value="">
+							    Créer / supprimer compte responsable
+							  </label>
+							</div>
+							<div class="form-check ">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value="" >
+							    Enlever\Donner les droits à un OPJ
+							  </label>
+							</div>
+							<div class="form-check">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value="">
+							    Ajouter un service 
+							  </label>
+							</div>
+							<div class="form-check ">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value="" >
+							   Lister tous les OPJ
+							  </label>
+							</div>
+							<div class="form-check">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value="">
+							    Lister les OPJ (de son etablissement maximum)
+							    
+							  </label>
+							</div>
+							<div class="form-check ">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value="" >
+							    Lister les OPJ (de son service maximum)
+							  </label>
+							</div>
+
+							<div class="form-check">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value="">
+							    Envoyer une demande de réquisition
+							    
+							  </label>
+							</div>
+							<div class="form-check ">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value="" >
+							    Imprimer une demande de réquisition
+							  </label>
+							  </div>
+							  <div class="form-check ">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value="" >
+							   Imprimer une réquisition 
+							  </label>
+							</div>
+							<div class="form-check">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value="">
+							    Ajouter/Désactiver un procureur 
+							    
+							  </label>
+							</div>
+							<div class="form-check ">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value="" >
+							    Accèder aux archives
+							  </label>
+							</div>
+							<div class="form-check">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value="">
+							    Donner / Enlever les droits d'un responsable
+							    
+							  </label>
+							</div>
+							<div class="form-check ">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value="" >
+							    Créer / desactiver un compte OPJ
+							  </label>
+							</div>
+							<div class="form-check ">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value="" >
+							    Créer / desactiver un greffier 
+							  </label>
+							</div>
+							<div class="form-check">
+							  <label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value="">
+							    Créer/ supprimer un établissement
+							    
 							  </label>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-				<a href="ajout-requisition.html"><button type="button" class="btn btn-outline-primary">Créer une demande de réquisition</button></a>
+				<a href=""><button type="button" class="btn btn-outline-primary">Valider modifications</button></a>
 		</div>
 		</div>
 
