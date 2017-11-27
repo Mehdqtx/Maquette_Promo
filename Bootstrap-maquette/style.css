@@ -189,3 +189,7 @@ select.form-control:not([size]):not([multiple]) {
 #listeDroits{
   margin-bottom: 30px;
 }
+
+.margin-card{
+  margin : 10px;
+}

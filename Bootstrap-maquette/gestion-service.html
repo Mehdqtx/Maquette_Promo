@@ -66,7 +66,7 @@
 						  <div class="card">
 						    <div class="card-header" role="tab" id="headingOne">
 						      <h5 class="mb-0">
-						        <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						        <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
 						          Service 1
 						        </a>
 						      </h5>
@@ -178,84 +178,76 @@
 				</div>
 			</div>
 
+			
 			<div class="col-4">
-				<div class="card">
-					<div class="card-header">
-						Filtres
-					</div>
-					<div class="card-body">
-						<form>
-							<label class="custom-control custom-checkbox">
-							  <input type="checkbox" class="custom-control-input">
-							  <span class="custom-control-indicator"></span>
-							  <span class="custom-control-description">Réquisitions validées</span>
-							</label>
-
-							<label class="custom-control custom-checkbox">
-							  <input type="checkbox" class="custom-control-input">
-							  <span class="custom-control-indicator"></span>
-							  <span class="custom-control-description">Réquisitions en attentes</span>
-							</label>
-
-							<label class="custom-control custom-checkbox">
-							  <input type="checkbox" class="custom-control-input">
-							  <span class="custom-control-indicator"></span>
-							  <span class="custom-control-description">Réquisitions rejetées</span>
-							</label>
-
-							<label class="custom-control custom-checkbox">
-							  <input type="checkbox" class="custom-control-input">
-							  <span class="custom-control-indicator"></span>
-							  <span class="custom-control-description">Réquisitions terminées</span>
-							</label>
-
-							<label class="custom-control custom-checkbox">
-							  <input type="checkbox" class="custom-control-input">
-							  <span class="custom-control-indicator"></span>
-							  <span class="custom-control-description">Réquisitions en cours</span>
-							</label>
-
-							<label class="custom-control custom-checkbox">
-							  <input type="checkbox" class="custom-control-input">
-							  <span class="custom-control-indicator"></span>
-							  <span class="custom-control-description">Réquisitions futures</span>
-							</label>
-
-							<div class="row">
-								<div class="col-12">
-							      <label for="validationCustom01">Date debut</label>
-							      <input type="date" class="form-control" id="validationCustom01">
-							    </div>
-							    <div class="col-12">
-							      <label for="validationCustom02">Date fin</label>
-							      <input type="date" class="form-control" id="validationCustom02">
-							    </div>
-							</div>
-
-              <!-- Pas besoin pour la première démo car que OPJ. -->
-						   <!-- <input type="text" class="form-control" placeholder="id demandeurs">
-
-						   <input type="text" class="form-control" placeholder="Nom demandeurs">
-
-						   <input type="text" class="form-control" placeholder="Prenom demandeurs">
-
-						   <select class="custom-select col-12 hide">
-							  <option selected>Etablissement</option>
-							  <option value="1">One</option>
-							  <option value="2">Two</option>
-							  <option value="3">Three</option>
-							</select>
-
-							<select class="custom-select col-12 hide">
-							  <option selected>Service</option>
-							  <option value="1">One</option>
-							  <option value="2">Two</option>
-							  <option value="3">Three</option>
-							</select> -->
-
+				<div class="row" style="margin-bottom: 10px">
+					<div class="card">
+					
+						<div class="card-header">
+							Gestion des services
+						</div>
+					
+					<form class="form-inline">
+						 <div class="row col-12 justify-content-center margin-card">
+						  <div class="form-group mx-sm-3">
+						    <label for="input" class="sr-only">Nom Service</label>
+						    <input type="email" class="form-control" id="inputPassword2" placeholder="Nom Service">
+						  </div>
+						</div>
+						<div class="row col-12 justify-content-center margin-card">
+						  <button type="submit" class="btn btn-primary">Ajouter Service</button>
+						 </div>
 						</form>
 					</div>
 				</div>
+				<div class="row">
+					<div class="card">
+					
+						<div class="card-header">
+							Gestion des OPJ
+						</div>
+					
+					<form class="form-inline">
+						 <div class="row col-12 justify-content-center margin-card">
+						  <div class="form-group mx-sm-3">
+						    <label for="input" class="sr-only">Nom</label>
+						    <input type="email" class="form-control" id="inputPassword2" placeholder="Nom">
+						  </div>
+						</div>
+						<div class="row col-12 justify-content-center margin-card">
+						  <div class="form-group mx-sm-3">
+						    <label for="input" class="sr-only">Prénom</label>
+						    <input type="email" class="form-control" id="inputPassword2" placeholder="Préom">
+						  </div>
+						</div>
+						<div class="row col-12 justify-content-center margin-card">
+						  <div class="form-group mx-sm-3">
+						    <label for="input" class="sr-only">Service</label>
+						    <input type="email" class="form-control" id="inputPassword2" placeholder="Service">
+						  </div>
+						</div>
+						<div class="row col-12 justify-content-center margin-card">
+						  <div class="form-group mx-sm-3">
+						    <label for="input" class="sr-only">Identifiant</label>
+						    <input type="email" class="form-control" id="inputPassword2" placeholder="Identifiant">
+						  </div>
+						</div>
+						<div class="row col-12 justify-content-center margin-card">
+						  <div class="form-group mx-sm-3">
+						    <label for="input" class="sr-only">Mot de passe</label>
+						    <input type="email" class="form-control" id="inputPassword2" placeholder="Mot de passe">
+						  </div>
+						</div>
+						<div class="row col-12 justify-content-center margin-card">
+						  <button type="submit" class="btn btn-primary">Ajouter OPJ</button>
+						 </div>
+						</form>
+					</div>
+				</div>
+			</div>
+					
+
+		</div>
 			</div>
 		</div>
 	</div>
